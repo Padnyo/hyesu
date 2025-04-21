@@ -186,11 +186,25 @@ footer {
 
     .box1, .box2, .box3, .box4 {
         padding: 10px 5px;
+        height: 520px;
     }
 
     .box p {
         font-size: 12px;
         line-height: 18px;
+    }
+
+    .my{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .my img{
+        padding: 0px 0px 15px 0px;
+        width: 70%;
+        height: auto;
     }
 }
 
