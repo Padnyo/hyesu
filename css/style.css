@@ -1,0 +1,364 @@
+/* ###################### 기본값 ###################### */
+
+p {
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: rgb(215, 217, 223);
+    font-size: 19px;
+}
+
+h1{
+    color: rgb(39, 24, 66);
+    font-size: 70px;
+    text-align: center;
+}
+
+h4 {
+    color: rgb(39, 24, 66);
+    text-align: center;
+    font-size: 18px;
+    margin-top: -50px;
+    margin-bottom: 70px;
+}
+
+footer {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    height: 80px;
+    text-align: center;
+}
+
+
+/* ###################### 로고 및 메뉴 ###################### */
+
+.navbar {
+    background-color: rgb(19, 11, 73);
+    color:white;
+    height: 80px;
+}
+
+.navbar .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 45px;
+}
+
+.navbar .content{
+    margin-top: 50px;
+    padding: 0 45px;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.navbar ul li{
+    margin-left: 40px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo_text{
+    margin-left: 17px;
+    font-size: 40px !important;
+    font-weight: bold;
+}
+
+.logo_img{
+    width: 45px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 0px) and (max-width: 770px){
+    .logo_text{
+        font-size: 20px !important;
+    }
+    .logo_img{
+        width: 30px;
+    }
+    .navbar a {
+        font-size: 13px;
+    }
+    .navbar ul li{
+        margin-left: 10px;
+    }
+}
+
+/* ###################### About Me 본문 ###################### */
+
+.keyword{
+    text-align: center;
+    list-style-type: none;
+    padding: 0 45px;
+}
+
+.keyword li{
+    margin: 0 20px;
+    display: inline-block;
+    padding: 13px;
+    color: white;
+    background-color: rgb(19, 11, 73);
+    border-radius: 10px;
+    width: 160px;
+    font-size: 20px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.box1, .box2, .box3, .box4 {
+    background-color: rgb(236, 233, 255);
+    border-radius: 15px;
+    padding: 20px;
+    height: 270px;
+}
+
+.box h3{
+    font-size: 25px;
+    margin: 25px 25px;
+}
+
+.box p {
+    margin: 0px 25px;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+@media screen and (min-width: 910px) and (max-width: 1580px){
+    h1 {
+      font-size: 70px;
+      text-align: center;
+    }
+
+    .keyword{
+        padding: 0 0;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 940px){
+    h1 {
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .keyword li{
+        width: 100px;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .box1, .box2, .box3, .box4 {
+        padding: 10px 5px;
+    }
+
+    .box p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+/* ###################### Project 본문 ###################### */
+
+h2{
+    color: rgb(39, 24, 66);
+    font-size: 30px;
+    text-align: center;
+}
+
+.date{
+    text-align: center;
+    margin: -10px 0px 35px;
+    font-size: 17px;
+}
+
+.web{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.web_project {
+    display: flex;
+    justify-content: center;
+    text-align: center;   
+}
+
+.web_project a{
+    text-decoration: none;
+    color: black;
+}
+
+.web_img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.devops{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+h3{
+    color: rgb(39, 24, 66);
+    font-size: 25px;
+}
+
+.pipeline{
+    width: 50%;
+    margin: auto;
+}
+
+.division{
+    display: flex;
+    gap: 40px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 910px){
+    
+    .pipeline{
+        width: 80%;
+        margin-top: -20px;
+    }
+
+    .division{
+        flex-direction: column;
+    }
+}
+
+/* ###################### Team 본문 ###################### */
+
+.team {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.team table {  /* 도구 비교표  */
+    border-collapse: collapse;  /* 두줄 X */
+    background-color: white;  /* 테이블 색상  */
+    margin-bottom: 50px;
+}
+
+.team td {  /* 제목셀 */
+    border: 1px solid #bbbbda; /* 테두리 1px 회색 실선 */
+    padding: 15px; /* 여백 */
+    text-align: center; /* text 중앙 정렬 */
+}
+
+.team th {  /* 셀 */
+    border: 1px solid #bbbbda; /* 테두리 1px 회색 실선 */
+    padding: 15px; /* 여백 */
+    text-align: center; /* text 중앙 정렬 */
+    background-color: #e6f0ff; /* 제목 셀의 색상 변경 */
+}
+
+.team td a{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1100px){
+
+    .team table{
+        table-layout: fixed;  
+        width: 100%;
+    }
+
+    .team img{
+        table-layout: fixed;  
+        width: 100%;
+    }
+
+    .team tbody td {
+        font-size: 14px;
+    }
+
+}
+
+/* ###################### SECON 본문 ###################### */
+
+.secon {
+    width: 80%;
+    margin: auto;
+}
+
+.secon th{
+    text-align: left;
+    white-space: nowrap;
+}
+
+.secon td{
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.secon_division img{
+    width: 600px;
+    margin: auto;
+}
+
+.secon_division{
+    display: flex;
+    gap: 40px;
+}
+
+.secon dl{
+    margin-top: 30px;
+}
+
+.secon dt{
+    font-weight: bold;
+    color: rgb(39, 24, 66);
+}
+
+.secon dd{
+    margin: 10px 10px 30px;
+}
+
+.pandyo_division img{
+    width: 33%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1300px){
+
+    .secon_division{
+        display:block;
+    }
+
+    .secon_division img{
+        width: 100%;
+    }
+
+    .pandyo_division img{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Pandyo - Project</title>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <img class="logo_img" src="/image/Pandyo.png">
+            <a class="logo_text" href="/index.html">Pandyo</a>
+        </div>
+        <ul class="menu">
+            <li><a href="/about_me.html" class="nanum-pen-script-regular">About Me</a></li>
+            <li><a href="/project.html" class="nanum-pen-script-regular">Project</a></li>
+            <li><a href="/team.html" class="nanum-pen-script-regular">Team</a></li>
+            <li><a href="/secon.html" class="nanum-pen-script-regular">SECON</a></li>
+        </ul>
+    </div>
+</nav>
+<section class="main">
+    <div class="content">
+        <h1>Project</h1>
+        <h4>진행한 프로젝트들이 정리된 페이지 입니다.</h4>
+    </div>
+    <div class="web">
+        <h2>웹 프로그래밍 - 개발</h2>
+        <p class="date">2025.03 ~ 진행중</p>
+        <p>중부대학교 정보보호학과 전공 과목으로 웹 프로그래밍을 수강하며 웹 사이트를 제작하였습니다.</p>
+        <div class="web_project">
+            <a href="https://hcj-demo-xi.vercel.app">HCJ - DEMO <img class="web_img" src="/image/hcj-demo.png"></a>
+            <a href="https://project-html-ochre.vercel.app">Project - HTML <img class="web_img" src="/image/project-html.png"></a>
+        </div>
+        <p align="center" style="font-size: 15px; color: #9c9c9c; margin: 0 0 40px;">사진 클릭 시 웹 사이트로 이동됩니다.</p>
+        <hr>
+    </div>
+    <br>
+    <div class="devops">
+        <h2>DevOps CI/CD Pipeline 구축</h2>
+        <p class="date">2024.12 ~ 진행중</p>
+        <p><b>DevOps</b>란 개발팀과 운영팀이 협업하여 빠른 배포 주기를 자동화하는 프로세스, 문화, 방법을 말합니다. 
+            DevOps를 구현하기 위한 방법으로는 <b>지속적인 통합(CI)</b>와 <b>지속적인 배포(CD)</b>를 의미하는 CI/CD 파이프라인을
+            이용한 프로젝트를 진행하였습니다.</p><br>
+            <img class="devops" src="/image/devops.png">
+            <br>
+            <br>
+        <div class="division">
+            <div>
+                <h3>Pipelein 아키텍처</h3>
+                파이프라인은 AWS의 서비스를 이용하여 오른쪽과 같이 구성하였습니다.
+                <ol>
+                    <li>GitHub에서 Code가 Push되면 파이프라인이 트리거</li>
+                    <li>Docker 이미지 생성 및 SCA, SAST 분석 후 S3 버킷에 업로드</li>
+                    <li>빌드된 Docker 이미지를 ECR 프라이빗 리포지토리에 저장</li>
+                    <li>지정된 Cluster에 Task 정의를 통해 서비스를 Rolling Update 배포</li>
+                    <li>OWASP ZAP으로 ECS 서비스 스캔 후 S3 버킷에 업로드</li>
+                    <li>CloudWatch의 로그 및 메트릭 수집 내용을 Grafana로 시각화</li>
+                </ol>
+            </div>
+            <img class="pipeline" src="/image/pipeline.png">
+        </div>
+    </div>
+</section>
+<footer>
+    <hr>
+    <a href="https://github.com/Padnyo"><img src="/image/github.png" width="2%"></a>
+    <a href="https://pandyo.tistory.com/"><img src="/image/tistory.png" width="2%"></a>
+    <a href="https://www.linkedin.com/in/%ED%98%9C%EC%88%98-%EB%B0%95-48506b35a/"><img src="/image/linkedin.png" width="2%"></a>
+    <br>Copyright © 2025 pandyo
+    <br>Contact: keshupark0113@jmail.ac.kr | 010-1234-5678
+</footer>
+</body>
+</html>
