@@ -8,7 +8,7 @@ p {
 
 body{
     background-color: rgb(215, 217, 223);
-    font-size: 19px;
+    font-size: 20px;
 }
 
 h1{
@@ -30,6 +30,7 @@ footer {
     margin-bottom: 40px;
     height: 80px;
     text-align: center;
+    font-size: 18px;
 }
 
 
@@ -119,8 +120,9 @@ footer {
     color: white;
     background-color: rgb(19, 11, 73);
     border-radius: 10px;
-    width: 160px;
+    width: 200px;
     font-size: 20px;
+    white-space:nowrap;
 }
 
 .box {
@@ -131,22 +133,32 @@ footer {
     margin: 10px auto;
 }
 
+.my{
+    display: flex;
+}
+
+.my img{
+    padding: 0px 0px 0px 40px;
+    width: auto;
+    height: 230px;
+}
+
 .box1, .box2, .box3, .box4 {
     background-color: rgb(236, 233, 255);
     border-radius: 15px;
     padding: 20px;
-    height: 270px;
+    height: 340px;
 }
 
 .box h3{
-    font-size: 25px;
+    font-size: 35px;
     margin: 25px 25px;
 }
 
 .box p {
     margin: 0px 25px;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 25px;
+    line-height: 40px;
 }
 
 @media screen and (min-width: 910px) and (max-width: 1580px){
@@ -321,7 +333,7 @@ h3{
 }
 
 .secon_division img{
-    width: 600px;
+    width: 800px;
     margin: auto;
 }
 
