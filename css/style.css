@@ -206,6 +206,9 @@ footer {
         width: 70%;
         height: auto;
     }
+    .box h3{
+        font-size: 20px;
+    }
 }
 
 /* ###################### Project 본문 ###################### */
